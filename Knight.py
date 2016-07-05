@@ -7,7 +7,7 @@ class Knight(ChessPiece):
 		super().__init__
 
 	def move(self,row, col):
-		if(self.possible_move(row,col)):
+		if(self.check_for_collision(row,col)):
 			if((abs(self.col-col) == 2 and abs(self.row-row) == 1) or (abs(self.col-col) == 1 and abs(self.row-row) == 2) ):
 				siege(row,col,self)
 			else:
