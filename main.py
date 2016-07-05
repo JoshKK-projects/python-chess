@@ -2,8 +2,8 @@ chessboard = [[0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0],
 [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0],
  [0,0,0,0,0,0,0,0]]
 
- def siege(row,col):
-	chessboard(row,col) = self
+ def siege(row,col,piece):
+	chessboard(row,col) = piece
 	print("Moved to " + row + " , " + col)
 	return(True)
 

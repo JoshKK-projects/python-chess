@@ -2,13 +2,13 @@ from ChessPiece import ChessPiece
 
 class Pawn(ChessPiece):
 
-def __init__(self, row, col, team_color):
-	super().__init__
+	def __init__(self, row, col, team_color):
+		super().__init__
 
-def check_diagonal(row, col):
-	if (col == self.col - 1 or col == self.col + 1):
-		return(True)
-	return(False)
+	def check_diagonal(row, col):
+		if (col == self.col - 1 or col == self.col + 1):
+			return(True)
+		return(False)
 
 	def move(row, col):
 		if (row == self.row + 1 and self.team_color == 'red'):
